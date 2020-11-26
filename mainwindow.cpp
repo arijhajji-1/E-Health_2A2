@@ -254,7 +254,7 @@ void MainWindow::on_pushButton_Entretien_Ajouter_clicked()
     QString id= ui->lineEdit_Entretien_ID->text();
     int num= ui->lineEdit_Entretien_Num->text().toInt();
     QString dt2= ui->dateEdit_Entertien->text();
-    QString idem= ui->lineEdit_Entretien_ID_2->text();
+    QString idem= ui->comboBox_3_Materiels->currentText();
     QString dsc= ui->lineEdit_Entretien_Description->text();
 
     Entretien e(id,idem,num,dsc,dt2);
@@ -323,7 +323,7 @@ void MainWindow::on_pushButton_Materiels_Modifier_clicked()
 void MainWindow::on_pushButton_Entretien_Modifier_clicked()
 {
     QString id= ui->lineEdit_Entretien_ID->text();
-    QString idem= ui->lineEdit_Entretien_ID_2->text();
+    QString idem= ui->comboBox_3_Materiels->currentText();
     int num= ui->lineEdit_Entretien_Num->text().toInt();
     QString dsc= ui->lineEdit_Entretien_Description->text();
     QString dt2= ui->dateEdit_Entertien->text();
@@ -391,7 +391,7 @@ QString a=ui->comboBox_2_Materiels->currentText();
 void MainWindow::on_pushButton_Entretien_Rechercher_clicked()
 {
     QString id= ui->lineEdit_Entretien_ID->text();
-    QString idem= ui->lineEdit_Entretien_ID_2->text();
+    QString idem= ui->comboBox_3_Materiels->currentText();
     int numero= ui->lineEdit_Entretien_Num->text().toInt();
     QString dsc= ui->lineEdit_Entretien_Description->text();
     QString dt2= ui->dateEdit_Entertien->text();
@@ -606,3 +606,19 @@ void MainWindow::on_pushButton_Entretien_PDF_clicked()
 
                  delete document;
 }
+
+
+void MainWindow::on_pushButton_LoadList_Materiels_clicked()
+{
+    QSqlDatabase db;
+
+                QSqlQueryModel * Modal=new  QSqlQueryModel();
+
+                QSqlQuery query;
+                query.prepare("select ID from Materiels");
+                query.exec();
+                Modal->setQuery(query);
+                ui->comboBox_3_Materiels->setModel(Modal);
+
+}
+

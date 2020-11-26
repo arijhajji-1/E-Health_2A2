@@ -124,6 +124,8 @@ private slots:
 
     void on_pushButton_Entretien_PDF_clicked();
 
+    void on_pushButton_LoadList_Materiels_clicked();
+
 private:
     Ui::MainWindow *ui;
   QString id,mdp;
