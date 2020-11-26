@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "materiels.h"
 #include "entretien.h"
+#include <QDateTime>
 #include <QDialog>
 #include <QFileDialog>
 #include <QTextDocument>
@@ -431,6 +432,9 @@ void MainWindow::on_pushButton_Materiels_PDF_clicked()
                  const int rowCount = tableView_Materiels.model()->rowCount();
                  const int columnCount =  tableView_Materiels.model()->columnCount();
 
+                 QString date = QDateTime::currentDateTime().toString();
+                 out <<date;
+
 
                  const QString strTitle ="Document";
 
@@ -532,6 +536,9 @@ void MainWindow::on_pushButton_Entretien_PDF_clicked()
                  const int rowCount = tableView_Entretien.model()->rowCount();
                  const int columnCount =  tableView_Entretien.model()->columnCount();
 
+                 QString date = QDateTime::currentDateTime().toString();
+                 out <<date;
+
 
                  const QString strTitle ="Document";
 
@@ -543,6 +550,7 @@ void MainWindow::on_pushButton_Entretien_PDF_clicked()
                      <<  "</head>\n"
                      "<body bgcolor=#ffffff link=#5000A0>\n"
                     << QString("<h3 style=\" font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: #FFD700; font-weight: lighter; text-align: center;\">%1</h3>\n").arg("Liste des Entretiens")
+
                     <<"<br>"
                      <<"<table border=1 cellspacing=0 cellpadding=2 width=\"100%\">\n";
 
