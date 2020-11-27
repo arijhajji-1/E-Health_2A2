@@ -412,18 +412,12 @@ void MainWindow::on_pushButton_Entretien_Trier_clicked()
 void MainWindow::on_pushButton_Materiels_PDF_clicked()
 {
     QSqlDatabase db;
+
                 QTableView tableView_Materiels;
-                QSqlQueryModel * Modal=new  QSqlQueryModel();
 
-                QSqlQuery qry;
-                 qry.prepare("SELECT * FROM MATERIELS ");
-                 qry.exec();
-                 Modal->setQuery(qry);
-                 tableView_Materiels.setModel(Modal);
+                tableView_Materiels.setModel(tempmateriels.exporterPDF());
 
-
-
-                 db.close();
+     db.close();
 
 
                  QString strStream;
@@ -516,18 +510,12 @@ void MainWindow::on_pushButton_Materiels_PDF_clicked()
 void MainWindow::on_pushButton_Entretien_PDF_clicked()
 {
     QSqlDatabase db;
-                QTableView tableView_Entretien;
-                QSqlQueryModel * Modal=new  QSqlQueryModel();
 
-                QSqlQuery qry;
-                 qry.prepare("SELECT * FROM ENTRETIEN ");
-                 qry.exec();
-                 Modal->setQuery(qry);
-                 tableView_Entretien.setModel(Modal);
+                 QTableView tableView_Entretien;
 
+                 tableView_Entretien.setModel(tempentretien.exporterPDF());
 
-
-                 db.close();
+     db.close();
 
 
                  QString strStream;
@@ -549,7 +537,7 @@ void MainWindow::on_pushButton_Entretien_PDF_clicked()
                      <<  QString("<title>%1</title>\n").arg(strTitle)
                      <<  "</head>\n"
                      "<body bgcolor=#ffffff link=#5000A0>\n"
-                    << QString("<h3 style=\" font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: #FFD700; font-weight: lighter; text-align: center;\">%1</h3>\n").arg("Liste des Entretiens")
+                    << QString("<h3 style=\" font-size: 40px; font-family: Arial, Helvetica, sans-serif; color: #D4AF37; font-weight: lighter; text-align: center;\">%1</h3>\n").arg("Liste des Entretiens")
 
                     <<"<br>"
                      <<"<table border=1 cellspacing=0 cellpadding=2 width=\"100%\">\n";
@@ -618,15 +606,8 @@ void MainWindow::on_pushButton_Entretien_PDF_clicked()
 
 void MainWindow::on_pushButton_LoadList_Materiels_clicked()
 {
-    QSqlDatabase db;
 
-                QSqlQueryModel * Modal=new  QSqlQueryModel();
-
-                QSqlQuery query;
-                query.prepare("select ID from Materiels");
-                query.exec();
-                Modal->setQuery(query);
-                ui->comboBox_3_Materiels->setModel(Modal);
+                ui->comboBox_3_Materiels->setModel(tempentretien.listMateriels());
 
 }
 

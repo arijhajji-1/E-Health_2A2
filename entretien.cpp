@@ -128,3 +128,25 @@ QSqlQueryModel * Entretien::trier(QString& choice,QString& a)
       return model;
 
 }
+
+QSqlQueryModel * Entretien::listMateriels()
+{
+    QSqlQueryModel * Model=new  QSqlQueryModel();
+
+    QSqlQuery query;
+    query.prepare("select ID from Materiels");
+    query.exec();
+    Model->setQuery(query);
+    return Model;
+}
+
+QSqlQueryModel * Entretien::exporterPDF()
+{
+    QSqlQueryModel * Model=new  QSqlQueryModel();
+
+    QSqlQuery qry;
+     qry.prepare("SELECT * FROM ENTRETIEN ");
+     qry.exec();
+     Model->setQuery(qry);
+     return Model;
+}

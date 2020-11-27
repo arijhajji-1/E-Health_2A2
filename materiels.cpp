@@ -104,3 +104,16 @@ QSqlQueryModel * Materiels::trier(QString& choice,QString& a)
     model->setHeaderData(2,Qt::Horizontal,QObject::tr("Date d'ajout"));
     return model;
 }
+
+QSqlQueryModel * Materiels::exporterPDF()
+{
+
+    QSqlQueryModel * Model=new  QSqlQueryModel();
+
+    QSqlQuery qry;
+     qry.prepare("SELECT * FROM MATERIELS ");
+     qry.exec();
+     Model->setQuery(qry);
+
+     return Model;
+}

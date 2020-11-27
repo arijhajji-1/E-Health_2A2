@@ -27,6 +27,8 @@ public:
     bool modifier();
     QSqlQueryModel * afficher();
     QSqlQueryModel * rechercher(QString &, QString &,QString &,QString &,QString &);
-     QSqlQueryModel * trier(QString&,QString&);
+    QSqlQueryModel * trier(QString&,QString&);
+    QSqlQueryModel * exporterPDF();
+    QSqlQueryModel * listMateriels();
 };
 #endif // ENTRETIEN_H

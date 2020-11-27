@@ -22,6 +22,7 @@ public:
     QSqlQueryModel * afficher();
     QSqlQueryModel * rechercher(QString &, QString &,QString &);
     QSqlQueryModel * trier(QString&,QString&);
+    QSqlQueryModel * exporterPDF();
 };
 
 #endif // MATERIELS_H
