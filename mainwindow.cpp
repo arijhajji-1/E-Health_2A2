@@ -415,3 +415,32 @@ void MainWindow::on_radioButton_14_clicked()
 {
     ui->afficher_scanner_2->setModel(tempscanner.trierB());
 }
+
+void MainWindow::on_pushButton_84_clicked()// PDF
+
+{
+    QString fileName = QFileDialog::getSaveFileName((QWidget* )0, "Export PDF", QString(), "*.pdf");
+        if (QFileInfo(fileName).suffix().isEmpty()) { fileName.append(".pdf"); }
+
+        QPrinter printer(QPrinter::PrinterResolution);
+        printer.setOutputFormat(QPrinter::PdfFormat);
+        printer.setPaperSize(QPrinter::A4);
+        printer.setOutputFileName(fileName);
+
+        QTextDocument doc;
+        QSqlQuery q;
+        q.prepare("SELECT * FROM RESSOURCE ");
+        q.exec();
+        QString pdf="<br> <h1  style='color:blue'>Ressource Labo  <br></h1>\n <br> <table>  <tr>  <th>SR </th>  <th>Date  </th> <th>Ref  </th>  <th>Remarque </th>  </tr>" ;
+
+
+        while ( q.next()) {
+
+            pdf= pdf+ " <br> <tr> <td>"+ q.value(1).toString()+" " + q.value(2).toString() +"</td>   <td>" +q.value(0).toString() +"  "" " "</td>   <td>"+q.value(3).toString()+"</td>   <td>"+q.value(6).toString()+" " " "  " " "</td>   <td>"+q.value(4).toString()+" </td> <td>"+q.value(5).toString()+" </td>" ;
+
+        }
+        doc.setHtml(pdf);
+        doc.setPageSize(printer.pageRect().size()); // This is necessary if you want to hide the page number
+        doc.print(&printer);
+
+}

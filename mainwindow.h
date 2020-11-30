@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include<scanner.h>
 #include<ressource.h>
+#include<QSound>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -116,6 +117,12 @@ private slots:
 
     void on_radioButton_14_clicked();
 
+     void on_pushButton_84_clicked();
+private:
+
+    Ui::MainWindow *us;
+
+    QSound *son;
 
 private:
     Ui::MainWindow *ui;

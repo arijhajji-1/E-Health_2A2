@@ -1,6 +1,11 @@
-QT       += core gui sql printsupport
+QT       += core gui sql
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui printsupport
+
+QT       += core gui multimedia
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
+TARGET = project
+TEMPLATE = app
 
 CONFIG += c++11
 
@@ -13,18 +18,27 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     ressource.cpp \
-    scanner.cpp
+    scanner.cpp \
+    stati.cpp
 
 HEADERS += \
     connexion.h \
     mainwindow.h \
     ressource.h \
-    scanner.h
+    scanner.h \
+    stati.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    stati.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES +=
+
+DISTFILES += \
+    resources/click.mp3 \
+    resources/template.png

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>799</width>
-    <height>621</height>
+    <width>813</width>
+    <height>625</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      <string notr="true">background-color: rgb(0, 170, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_2">
@@ -167,7 +167,7 @@ QTabBar::tab:hover
 }</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -3571,6 +3571,9 @@ QPushButton {
             <height>621</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
           <widget class="QWidget" name="tab_19">
            <attribute name="title">
             <string>Entretien</string>
@@ -4078,8 +4081,8 @@ QPushButton {
            <widget class="QPushButton" name="pushButton_81">
             <property name="geometry">
              <rect>
-              <x>300</x>
-              <y>390</y>
+              <x>310</x>
+              <y>340</y>
               <width>131</width>
               <height>23</height>
              </rect>
@@ -4591,34 +4594,6 @@ font-weight: bold;</string>
              </property>
             </widget>
            </widget>
-           <widget class="QPushButton" name="pushButton_87">
-            <property name="geometry">
-             <rect>
-              <x>300</x>
-              <y>340</y>
-              <width>131</width>
-              <height>23</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">QPushButton:checked {
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgb(120, 201, 255), stop:1 rgb(120, 0, 255))
-}
-
-QPushButton:hover {
-
-	background-color: rgb(170, 255, 255);
-}
-QPushButton {
-     background-color: rgb(120, 201, 255); border: 1px solid black;
-	border-color: rgb(170, 170, 255);
-     border-radius: 5px;
-}</string>
-            </property>
-            <property name="text">
-             <string>PDF</string>
-            </property>
-           </widget>
            <widget class="QPushButton" name="pushButton_88">
             <property name="geometry">
              <rect>
@@ -4650,7 +4625,7 @@ QPushButton {
            <widget class="QPushButton" name="pushButton_90">
             <property name="geometry">
              <rect>
-              <x>160</x>
+              <x>170</x>
               <y>340</y>
               <width>131</width>
               <height>23</height>
@@ -4786,12 +4761,12 @@ QPushButton {
              <rect>
               <x>30</x>
               <y>460</y>
-              <width>451</width>
-              <height>16</height>
+              <width>551</width>
+              <height>51</height>
              </rect>
             </property>
             <property name="text">
-             <string>Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;* Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement&lt;/p&gt;&lt;p&gt;** 1: Analyse / 2:Scanner &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
            <widget class="QFrame" name="frame_8">
@@ -5270,7 +5245,7 @@ QPushButton {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>799</width>
+     <width>813</width>
      <height>26</height>
     </rect>
    </property>
