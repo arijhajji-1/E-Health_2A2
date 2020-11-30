@@ -17,11 +17,18 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    on_pushButton_78_clicked();
     ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
     ui->afficher_scanner_2->setModel(tempscanner.afficher_scanner());
 
     ui->lineEdit_40->setValidator(new QIntValidator(0,99999999,this));
     ui->lineEdit_32->setValidator(new QIntValidator(0,99999999,this));
+    ui->lineEdit_32->setEnabled(1);
+    ui->lineEdit_32->clear();
+    ui->lineEdit_37->clear();
+    ui->lineEdit_38->clear();
+    ui->dateEdit_11->setCalendarPopup(true);
+
 }
 
 MainWindow::~MainWindow()
@@ -298,6 +305,10 @@ void MainWindow::on_pushButton_109_clicked() //ajout ressource
     if (test)
     {
         ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+        ui->lineEdit_32->setEnabled(1);
+        ui->lineEdit_32->clear();
+        ui->lineEdit_37->clear();
+        ui->lineEdit_38->clear();
         QMessageBox::information(nullptr, QObject::tr("Ajout"),
         QObject::tr("Ajout avec succée"), QMessageBox::Ok);
        // hide();
@@ -320,6 +331,10 @@ void MainWindow::on_pushButton_111_clicked() //supprimer ressource
     if(test)
     {
         ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+        ui->lineEdit_32->setEnabled(1);
+        ui->lineEdit_32->clear();
+        ui->lineEdit_37->clear();
+        ui->lineEdit_38->clear();
         QMessageBox::information(nullptr, QObject::tr("Supprimer"),
         QObject::tr("Suppression avec succée"), QMessageBox::Ok);
        // hide();
@@ -343,11 +358,15 @@ void MainWindow::on_pushButton_110_clicked() //modifer ressource
 
 
     ressource c(ref,stock,date,remarque);
-    bool test=c.modifier_ressource(ref);
+    bool test=c.modifier_ressource(c);
       if(test)
     {
 
           ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+          ui->lineEdit_32->setEnabled(1);
+          ui->lineEdit_32->clear();
+          ui->lineEdit_37->clear();
+          ui->lineEdit_38->clear();
     QMessageBox::information(nullptr, QObject::tr("Modifier"),
                       QObject::tr("Modification avec succees.\n"
                                   "Click Cancel to exit."), QMessageBox::Cancel);
@@ -443,4 +462,47 @@ void MainWindow::on_pushButton_84_clicked()// PDF
         doc.setPageSize(printer.pageRect().size()); // This is necessary if you want to hide the page number
         doc.print(&printer);
 
+}
+
+void MainWindow::on_afficher_ressource_3_activated(const QModelIndex &index)
+{
+    //boutonradiocm();
+
+    QString val=ui->afficher_ressource_3->model()->data(index).toString();
+    QSqlQuery qry ;
+
+    qry=tempressource.tableclicked(val);
+
+    if (qry.exec())
+    {
+        while (qry.next())
+        {
+            ui->lineEdit_32->setDisabled(1);
+            ui->lineEdit_32->setText(qry.value(0).toString());
+            ui->lineEdit_37->setText(qry.value(1).toString());
+           ui->dateEdit_11->setDate(qry.value(2).toDate());
+
+            ui->lineEdit_38->setText(qry.value(3).toString());
+
+
+        }
+    }
+}
+
+void MainWindow::on_pushButton_77_clicked()
+{
+    sre=new stat_ressource (this);
+    sre->show();
+}
+
+void MainWindow::on_pushButton_78_clicked()
+{
+    ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+}
+
+void MainWindow::on_lineEdit_39_textEdited(const QString &arg1)
+{
+
+   value=arg1;
+   ui->afficher_ressource_3->setModel(tempressource.Rechercher(value)) ;
 }

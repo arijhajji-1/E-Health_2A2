@@ -1,22 +1,22 @@
-#include "stati.h"
-#include "ui_stati.h"
+#include "stat_ressource.h"
+#include "ui_stat_ressource.h"
 
-Stati::Stati(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Stati)
+stat_ressource::stat_ressource(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::stat_ressource)
 {
     ui->setupUi(this);
 }
 
-Stati::~Stati()
+stat_ressource::~stat_ressource()
 {
     delete ui;
 }
-int Stati::Statistique_partie2()
+int stat_ressource::Statistique_partie2()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT '1' AND '50'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '10' AND '50'") ;
     while(requete.next())
     {
             count++ ;
@@ -25,11 +25,11 @@ int Stati::Statistique_partie2()
 return count ;
 
 }
-int Stati::Statistique_partie3()
+int stat_ressource::Statistique_partie3()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where  STOCKRESTANT '51' AND '200'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '51' AND '100'") ;
     while(requete.next())
     {
             count++ ;
@@ -38,11 +38,11 @@ int Stati::Statistique_partie3()
 return count ;
 
 }
-int Stati::Statistique_partie4()
+int stat_ressource::Statistique_partie4()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '200' AND '500'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '101' AND '99999'") ;
     while(requete.next())
     {
             count++ ;
@@ -52,7 +52,7 @@ return count ;
 
 
 }
-void Stati::paintEvent(QPaintEvent *)
+void stat_ressource::paintEvent(QPaintEvent *)
 {
 
     int b=Statistique_partie2();
@@ -78,20 +78,14 @@ void Stati::paintEvent(QPaintEvent *)
     QPainter painter(this);
     QRectF size=QRectF(50,50,this->width()-500,this->width()-500);
 
-    painter.setBrush(Qt::green);
+    painter.setBrush(Qt::blue);
     painter.drawPie(size,0,16*y);
-    ui->label_2->setText("1-50") ;
-    painter.setBrush(Qt::red);
+    ui->label_2->setText("10-50") ;
+    painter.setBrush(Qt::green);
     painter.drawPie(size,16*y,16*m);
     ui->label_3->setText("51-100") ;
-    painter.setBrush(Qt::blue);
+    painter.setBrush(Qt::red);
     painter.drawPie(size,16*(m+y),16*z);
-    ui->label_4->setText("201-500") ;
-
-}
-
-
- void Stati::on_widget_customContextMenuRequested(const QPoint &pos)
-{
+    ui->label_4->setText("101-9999") ;
 
 }

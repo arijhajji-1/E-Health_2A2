@@ -1,10 +1,12 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "string"
+#include<stat_ressource.h>
 #include <QMainWindow>
 #include<scanner.h>
 #include<ressource.h>
 #include<QSound>
+#include<QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -118,17 +120,23 @@ private slots:
     void on_radioButton_14_clicked();
 
      void on_pushButton_84_clicked();
-private:
 
-    Ui::MainWindow *us;
+     void on_afficher_ressource_3_activated(const QModelIndex &index);
 
-    QSound *son;
+     void on_pushButton_77_clicked();
+
+     void on_pushButton_78_clicked();
+
+     void on_lineEdit_39_textEdited(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;
     scanner tempscanner;
     ressource tempressource;
+    stat_ressource *sre;
 
-  QString id,mdp;
+  QString id,mdp,value;
 };
+
+
 #endif // MAINWINDOW_H

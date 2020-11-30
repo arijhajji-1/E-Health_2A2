@@ -19,18 +19,18 @@ SOURCES += \
     mainwindow.cpp \
     ressource.cpp \
     scanner.cpp \
-    stati.cpp
+    stat_ressource.cpp
 
 HEADERS += \
     connexion.h \
     mainwindow.h \
     ressource.h \
     scanner.h \
-    stati.h
+    stat_ressource.h
 
 FORMS += \
     mainwindow.ui \
-    stati.ui
+    stat_ressource.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -1,4 +1,5 @@
 #include "ressource.h"
+#include "ressource.h"
 
 ressource::ressource()
 {
@@ -15,6 +16,12 @@ ressource::ressource(int r,int s,QString d,QString re)
     this->date=d;
     this->remarque=re;
 }
+int ressource::get_ref(){return ref ;}
+int ressource::get_stock(){return  stock;}
+QString ressource::get_date(){return date;}
+QString ressource::get_remarque(){return remarque;}
+
+
 
 bool ressource ::ajouter_ressource()
 {
@@ -33,7 +40,7 @@ bool ressource ::ajouter_ressource()
 QSqlQueryModel * ressource ::afficher_ressource()
 {
     QSqlQueryModel * model=new QSqlQueryModel();
-    model->setQuery("select * from ressource");
+    model->setQuery("select * from RESSOURCE");
 
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("REF"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("STOCK_RESTANT"));
@@ -54,16 +61,15 @@ bool ressource :: supprimer_ressource(int idd)
 
 }
 
-bool ressource::modifier_ressource(int idd)
+bool ressource::modifier_ressource(ressource R)
 {
 QSqlQuery query;
-QString res= QString::number(idd);
 query.prepare("Update ressource set REF = :ref , STOCKRESTANT = :stockrestant , DATER = :date , REMARQUE = :remarque   where REF = :ref ");
-query.bindValue(":id", res);
-query.bindValue(":ref", ref);
-query.bindValue(":stockrestant", stock);
-query.bindValue(":date", date);
-query.bindValue(":remarque", remarque);
+
+query.bindValue(":ref", R.get_ref());
+query.bindValue(":stockrestant", R.get_stock());
+query.bindValue(":date",R.get_date());
+query.bindValue(":remarque",R.get_remarque());
 
 
 return    query.exec();
@@ -72,12 +78,13 @@ return    query.exec();
 QSqlQueryModel* ressource::Rechercher(QString cin)
  {
      QSqlQueryModel * model= new QSqlQueryModel();
-     model->setQuery("select * from ressource where ref LIKE '"+cin+"%' or stockrestant LIKE '"+cin+"%' or date LIKE '"+cin+"%'");
+     model->setQuery("select * from RESSOURCE where REF LIKE '"+cin+"%' or STOCKRESTANT LIKE '"+cin+"%' or REMARQUE LIKE '"+cin+"%'");
 
 
      model->setHeaderData(0, Qt::Horizontal, QObject::tr("REF"));
      model->setHeaderData(1, Qt::Horizontal, QObject::tr("STOCKRESTANT"));
      model->setHeaderData(2, Qt::Horizontal, QObject::tr("DATER"));
+     model->setHeaderData(3, Qt::Horizontal, QObject::tr("REMARQUE"));
 
  return model;
 }
@@ -111,3 +118,11 @@ QSqlQueryModel *ressource::trierB2() // m sghir lel kbir
     return model;
 }
 
+QSqlQuery  ressource::tableclicked(QString a)
+{
+
+    QSqlQuery qry ;
+
+     qry.prepare("Select * from ressource where REF ='"+a+"' ");
+    return qry;
+}

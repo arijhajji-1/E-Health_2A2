@@ -17,17 +17,15 @@
 #include <QtCharts/QPieSlice>
 #include <QPainter>
 #include <QSqlQuery>
-namespace Ui {
+
+namespace Uii {
 
 class Stati;
 }
 
-class Stati : public QDialog
-{
-    Q_OBJECT
 
-public:
-    explicit Stati(QWidget *parent = nullptr);
+
+
     ~Stati();
     int Statistique_partie2() ;
     int Statistique_partie3() ;
@@ -41,7 +39,7 @@ private slots:
     void on_widget_customContextMenuRequested(const QPoint &pos);
 
 private:
-    Ui::Stati *ui;
+    Uii::Stati *uii;
 };
 
 #endif // STATI_H

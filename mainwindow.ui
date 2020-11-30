@@ -27,7 +27,7 @@
      <string notr="true">background-color: rgb(0, 170, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_2">
@@ -5203,13 +5203,13 @@ QPushButton {
              <string>Historique</string>
             </property>
            </widget>
-           <widget class="QPushButton" name="pushButton_86">
+           <widget class="QPushButton" name="pushButton_77">
             <property name="geometry">
              <rect>
               <x>170</x>
               <y>330</y>
-              <width>131</width>
-              <height>23</height>
+              <width>141</width>
+              <height>28</height>
              </rect>
             </property>
             <property name="styleSheet">
@@ -5228,7 +5228,20 @@ QPushButton {
 }</string>
             </property>
             <property name="text">
-             <string>Stat</string>
+             <string>STAT</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_78">
+            <property name="geometry">
+             <rect>
+              <x>540</x>
+              <y>430</y>
+              <width>93</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>aFFICHER</string>
             </property>
            </widget>
           </widget>

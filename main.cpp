@@ -7,14 +7,20 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+
+
     connexion c;
+
+
+
+
     bool test=c.ouvrirconnexion();
+MainWindow w;
       if(test)
         {
           w.show();
-          QMessageBox::information(nullptr, QObject::tr("database is open"),
+           // w.showFullScreen();
+                    QMessageBox::information(nullptr, QObject::tr("database is open"),
                  QObject::tr("connection successful.\n"
                              "Click Cancel to exit."), QMessageBox::Cancel);
         }
