@@ -5234,14 +5234,29 @@ QPushButton {
            <widget class="QPushButton" name="pushButton_78">
             <property name="geometry">
              <rect>
-              <x>540</x>
-              <y>430</y>
+              <x>200</x>
+              <y>380</y>
               <width>93</width>
               <height>28</height>
              </rect>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgb(120, 201, 255), stop:1 rgb(120, 0, 255))
+}
+
+QPushButton:hover {
+
+	background-color: rgb(170, 255, 255);
+}
+QPushButton {
+     background-color: rgb(120, 201, 255); border: 1px solid black;
+	border-color: rgb(170, 170, 255);
+     border-radius: 5px;
+}</string>
+            </property>
             <property name="text">
-             <string>aFFICHER</string>
+             <string>Afficher</string>
             </property>
            </widget>
           </widget>

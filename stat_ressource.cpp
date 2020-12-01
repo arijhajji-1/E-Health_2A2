@@ -16,7 +16,7 @@ int stat_ressource::Statistique_partie2()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '10' AND '50'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '1' AND '50'") ;
     while(requete.next())
     {
             count++ ;
@@ -29,7 +29,7 @@ int stat_ressource::Statistique_partie3()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '51' AND '100'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '51' AND '150'") ;
     while(requete.next())
     {
             count++ ;
@@ -42,7 +42,7 @@ int stat_ressource::Statistique_partie4()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '101' AND '99999'") ;
+    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '151' AND '300'") ;
     while(requete.next())
     {
             count++ ;

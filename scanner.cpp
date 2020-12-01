@@ -22,7 +22,7 @@ scanner::scanner(int c,QString n,QString p,QString dt,int num,QString a,QString 
     this->date=d;
 }
 
-bool scanner ::ajouter_scanner()
+bool scanner ::ajouter_scanner() //ajout scanner
 {
     QSqlQuery query;
     QString CINS= QString::number(cin);
@@ -39,7 +39,7 @@ bool scanner ::ajouter_scanner()
     return    query.exec();
 }
 
-QSqlQueryModel * scanner ::afficher_scanner()
+QSqlQueryModel * scanner ::afficher_scanner() // affichage
 {
     QSqlQueryModel * model=new QSqlQueryModel();
     model->setQuery("select * from scanner");
@@ -56,7 +56,7 @@ QSqlQueryModel * scanner ::afficher_scanner()
 }
 
 
-bool scanner :: supprimer_scanner(int idd)
+bool scanner :: supprimer_scanner(int idd) //supp
 {
     QSqlQuery query;
     QString res=QString::number(idd);
@@ -66,7 +66,7 @@ bool scanner :: supprimer_scanner(int idd)
 
 }
 
-bool scanner::modifier_scanner(int idd)
+bool scanner::modifier_scanner(int idd) //modif
 {
 QSqlQuery query;
 QString res= QString::number(idd);

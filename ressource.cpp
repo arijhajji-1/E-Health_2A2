@@ -55,7 +55,7 @@ bool ressource :: supprimer_ressource(int idd)
 {
     QSqlQuery query;
     QString res=QString::number(idd);
-    query.prepare("Delete from ressource where REF = :ref");
+    query.prepare("Delete from RESSOURCE where REF = :ref");
     query.bindValue(":ref",res);
     return query.exec();
 
