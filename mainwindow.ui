@@ -3916,7 +3916,7 @@ QTabBar::tab:hover
          </rect>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="page_23">
          <widget class="QPushButton" name="pushButton_20">
@@ -4016,6 +4016,9 @@ QPushButton {
             <height>611</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
           <widget class="QWidget" name="tab_20">
            <attribute name="title">
             <string>Scanner et annalyse</string>
@@ -4110,13 +4113,13 @@ QPushButton {
             <property name="geometry">
              <rect>
               <x>30</x>
-              <y>460</y>
+              <y>420</y>
               <width>451</width>
-              <height>16</height>
+              <height>111</height>
              </rect>
             </property>
             <property name="text">
-             <string>Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement &lt;/p&gt;&lt;p&gt;** 1: Analyse / 2:Scanner &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
            <widget class="QFrame" name="frame_7">
@@ -4468,7 +4471,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              <bool>true</bool>
             </property>
            </widget>
-           <widget class="QTableView" name="afficher_scanner_2">
+           <widget class="QTableView" name="afficher_scanner">
             <property name="geometry">
              <rect>
               <x>20</x>
@@ -4766,7 +4769,7 @@ QPushButton {
              </rect>
             </property>
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;* Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement&lt;/p&gt;&lt;p&gt;** 1: Analyse / 2:Scanner &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;* Dans le cas de suppression ou recherche il suffit d'entree l'ID seulement&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
            <widget class="QFrame" name="frame_8">
@@ -5021,7 +5024,7 @@ QPushButton {
              <bool>true</bool>
             </property>
            </widget>
-           <widget class="QTableView" name="afficher_ressource_3">
+           <widget class="QTableView" name="afficher_ressource">
             <property name="geometry">
              <rect>
               <x>20</x>

@@ -18,8 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     on_pushButton_78_clicked();
-    ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
-    ui->afficher_scanner_2->setModel(tempscanner.afficher_scanner());
+    ui->afficher_ressource->setModel(tempressource.afficher_ressource());
+    ui->afficher_scanner->setModel(tempscanner.afficher_scanner());
 
     ui->lineEdit_40->setValidator(new QIntValidator(0,99999999,this));
     ui->lineEdit_32->setValidator(new QIntValidator(0,99999999,this));
@@ -215,6 +215,10 @@ void MainWindow::on_pushButton_37_clicked()
     ui->stackedWidget_6->setCurrentIndex(0);
 }
 
+
+/********************SCANNER*************************/
+
+
 void MainWindow::on_pushButton_79_clicked() // ajout scanner
 {
   //  int cin=ui->stackedWidget_6->lineEdit_40->text().toInt();
@@ -231,7 +235,7 @@ void MainWindow::on_pushButton_79_clicked() // ajout scanner
     bool test=c.ajouter_scanner();
     if (test)
     {
-        ui->afficher_scanner_2->setModel(tempscanner.afficher_scanner());
+        ui->afficher_scanner->setModel(tempscanner.afficher_scanner());
         QMessageBox::information(nullptr, QObject::tr("Ajout"),
         QObject::tr("Ajout avec succée"), QMessageBox::Ok);
        // hide();
@@ -250,7 +254,7 @@ void MainWindow::on_pushButton_82_clicked() //supprimer scanner
     bool test=tempscanner.supprimer_scanner(id);
     if(test)
     {
-        ui->afficher_scanner_2->setModel(tempscanner.afficher_scanner());
+        ui->afficher_scanner->setModel(tempscanner.afficher_scanner());
         QMessageBox::information(nullptr, QObject::tr("Supprimer"),
         QObject::tr("Suppression avec succée"), QMessageBox::Ok);
        // hide();
@@ -279,7 +283,7 @@ void MainWindow::on_pushButton_76_clicked() //modifier scanner
       if(test)
     {
 
-          ui->afficher_scanner_2->setModel(tempscanner.afficher_scanner());//refresh
+          ui->afficher_scanner->setModel(tempscanner.afficher_scanner());//refresh
     QMessageBox::information(nullptr, QObject::tr("Modifier"),
                       QObject::tr("Modification avec succees.\n"
                                   "Click Cancel to exit."), QMessageBox::Cancel);
@@ -290,8 +294,32 @@ void MainWindow::on_pushButton_76_clicked() //modifier scanner
                       QObject::tr("Erreur !.\n"
                                   "Click Cancel to exit."), QMessageBox::Cancel);
 }
+void MainWindow::on_pushButton_81_clicked() //imprimer scanner
+{
+    QPrinter rd;
+        QPrintDialog d(&rd,this);
+        d.setWindowTitle("Print Livre");
+        d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
+        if (d.exec() != QDialog::Accepted)
+            return ;
+}
 
-void MainWindow::on_pushButton_109_clicked() //ajout ressource
+void MainWindow::on_pushButton_80_clicked() //recherche scanner
+{
+    QString cin =ui->lineEdit_36->text();
+    ui->afficher_scanner->setModel(tempscanner.Recherche(cin));
+}
+void MainWindow::on_radioButton_12_clicked()//trie scanner
+{
+    ui->afficher_scanner->setModel(tempscanner.trierA());
+
+}
+
+/********************RESSOURCE*************************/
+
+      /****************ajout****************/
+
+void MainWindow::on_pushButton_109_clicked()
 {
     int ref =ui->lineEdit_32->text().toInt();
     int stock=ui->lineEdit_37->text().toInt();
@@ -304,7 +332,7 @@ void MainWindow::on_pushButton_109_clicked() //ajout ressource
     bool test=c.ajouter_ressource();
     if (test)
     {
-        ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+        ui->afficher_ressource->setModel(tempressource.afficher_ressource());
         ui->lineEdit_32->setEnabled(1);
         ui->lineEdit_32->clear();
         ui->lineEdit_37->clear();
@@ -322,15 +350,15 @@ void MainWindow::on_pushButton_109_clicked() //ajout ressource
 }
 
 
+      /********************supprimer************/
 
-
-void MainWindow::on_pushButton_111_clicked() //supprimer ressource
+void MainWindow::on_pushButton_111_clicked()
 {
     int ref=ui->lineEdit_32->text().toUInt();
     bool test=tempressource.supprimer_ressource(ref);
     if(test)
     {
-        ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+        ui->afficher_ressource->setModel(tempressource.afficher_ressource());
         ui->lineEdit_32->setEnabled(1);
         ui->lineEdit_32->clear();
         ui->lineEdit_37->clear();
@@ -347,8 +375,9 @@ void MainWindow::on_pushButton_111_clicked() //supprimer ressource
 }
 
 
+      /****************modifier****************/
 
-void MainWindow::on_pushButton_110_clicked() //modifer ressource
+void MainWindow::on_pushButton_110_clicked()
 {
     int ref =ui->lineEdit_32->text().toInt();
     int stock=ui->lineEdit_37->text().toInt();
@@ -362,7 +391,7 @@ void MainWindow::on_pushButton_110_clicked() //modifer ressource
       if(test)
     {
 
-          ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+          ui->afficher_ressource->setModel(tempressource.afficher_ressource());
           ui->lineEdit_32->setEnabled(1);
           ui->lineEdit_32->clear();
           ui->lineEdit_37->clear();
@@ -378,64 +407,53 @@ void MainWindow::on_pushButton_110_clicked() //modifer ressource
                                   "Click Cancel to exit."), QMessageBox::Cancel);
 }
 
-void MainWindow::on_pushButton_83_clicked() //imprimer ressource
-{
-    QPrinter rd;
-        QPrintDialog d(&rd,this);
-        d.setWindowTitle("Print Livre");
-        d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
-        if (d.exec() != QDialog::Accepted)
-            return ;
-}
 
-void MainWindow::on_pushButton_81_clicked() //imprimer scanner
-{
-    QPrinter rd;
-        QPrintDialog d(&rd,this);
-        d.setWindowTitle("Print Livre");
-        d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
-        if (d.exec() != QDialog::Accepted)
-            return ;
-}
+      /****************recherche****************/
 
-void MainWindow::on_pushButton_80_clicked() //recherche scanner
-{
-    QString cin =ui->lineEdit_36->text();
-    ui->afficher_scanner_2->setModel(tempscanner.Recherche(cin));
-}
-
-void MainWindow::on_pushButton_89_clicked() //recherche ressource
+void MainWindow::on_pushButton_89_clicked()
 {
     QString ref =ui->lineEdit_39->text();
-    ui->afficher_ressource_3->setModel(tempressource.Rechercher(ref));
-
+    ui->afficher_ressource->setModel(tempressource.Rechercher(ref));
 
 }
 
+      /****************impression****************/
+
+void MainWindow::on_pushButton_83_clicked()
+{
+    QPrinter rd;
+        QPrintDialog d(&rd,this);
+        d.setWindowTitle("Print Livre");
+        d.addEnabledOption(QAbstractPrintDialog::PrintSelection);
+        if (d.exec() != QDialog::Accepted)
+            return ;
+}
+
+
+      /****************tri****************/
 
 void MainWindow::on_radioButton_11_clicked() //trie ressource
 {
-    ui->afficher_ressource_3->setModel(tempressource.trierA1());
+    ui->afficher_ressource->setModel(tempressource.trierA1());
 }
 
-void MainWindow::on_radioButton_13_clicked() //trie
+void MainWindow::on_radioButton_13_clicked()
 {
-    ui->afficher_ressource_3->setModel(tempressource.trierB2());
+    ui->afficher_ressource->setModel(tempressource.trierB2());
 }
 
 
 
-void MainWindow::on_radioButton_12_clicked()//trie scanner
-{
-    ui->afficher_scanner_2->setModel(tempscanner.trierA());
-}
+
 
 void MainWindow::on_radioButton_14_clicked()
 {
-    ui->afficher_scanner_2->setModel(tempscanner.trierB());
+    ui->afficher_scanner->setModel(tempscanner.trierB());
 }
 
-void MainWindow::on_pushButton_84_clicked()// PDF
+      /****************pdf****************/
+
+void MainWindow::on_pushButton_84_clicked()
 
 {
     QString fileName = QFileDialog::getSaveFileName((QWidget* )0, "Export PDF", QString(), "*.pdf");
@@ -468,7 +486,7 @@ void MainWindow::on_afficher_ressource_3_activated(const QModelIndex &index)
 {
     //boutonradiocm();
 
-    QString val=ui->afficher_ressource_3->model()->data(index).toString();
+    QString val=ui->afficher_ressource->model()->data(index).toString();
     QSqlQuery qry ;
 
     qry=tempressource.tableclicked(val);
@@ -497,12 +515,12 @@ void MainWindow::on_pushButton_77_clicked()
 
 void MainWindow::on_pushButton_78_clicked()
 {
-    ui->afficher_ressource_3->setModel(tempressource.afficher_ressource());
+    ui->afficher_ressource->setModel(tempressource.afficher_ressource());
 }
 
 void MainWindow::on_lineEdit_39_textEdited(const QString &arg1)
 {
 
    value=arg1;
-   ui->afficher_ressource_3->setModel(tempressource.Rechercher(value)) ;
+   ui->afficher_ressource->setModel(tempressource.Rechercher(value)) ;
 }
