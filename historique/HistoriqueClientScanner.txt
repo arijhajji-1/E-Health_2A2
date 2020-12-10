@@ -1,0 +1,73 @@
+
+Client Scanner a été ajoutée sous :
+ cin :1444
+nom : iop 
+tel:4471
+Client Scanner a été ajoutée sous :
+ cin :111
+nom : io 
+tel:747
+Client Scanner a été ajoutée sous :
+ cin :174
+nom : ioui 
+tel:8575
+Client Scanner a été ajoutée sous :
+ cin :4245
+nom : jio 
+tel:7578
+Client Scanner a été ajoutée sous :
+ cin :10
+nom : kl 
+tel:10
+Client Scanner a été ajoutée sous :
+ cin :11
+nom : jk 
+tel:1001
+Client Scanner a été ajoutée sous :
+ cin :100
+nom : aaa 
+tel:100
+Client Scanner a été ajoutée sous :
+ cin :111
+nom : jkl 
+tel:124
+Client Scanner a été ajoutée sous :
+ cin :123
+nom : ghj 
+tel:122
+Client Scanner a été ajoutée sous :
+ cin :11
+nom : yuiyu 
+tel:245
+Client Scanner a été ajoutée sous :
+ cin :14
+nom : uio 
+tel:4523
+Client Scanner a été ajoutée sous :
+ cin :1
+nom : jk 
+tel:432
+Client Scanner a été ajoutée sous :
+ cin :3
+nom : yu 
+tel:4523
+Client Scanner a été ajoutée sous :
+ cin :4
+nom : dfg 
+tel:42
+Client Scanner a été ajoutée sous :
+ cin :5
+nom : fgh 
+tel:8456
+Client Scanner a été ajoutée sous :
+ cin :1
+nom : aze 
+tel:14785
+Client Scanner a été ajoutée sous :
+ cin :2
+nom : aze 
+tel:6485
+Client Scanner a été ajoutée sous :
+ cin :10
+nom : ch 
+tel:24893

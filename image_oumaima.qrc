@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img oumaima/add (1).png</file>
+        <file>img oumaima/add.png</file>
+        <file>img oumaima/age.png</file>
+        <file>img oumaima/archive.png</file>
+        <file>img oumaima/back (1).png</file>
+        <file>img oumaima/back.png</file>
+        <file>img oumaima/calendar.png</file>
+        <file>img oumaima/camera.png</file>
+        <file>img oumaima/cardiogram.png</file>
+        <file>img oumaima/clear.png</file>
+        <file>img oumaima/clock.png</file>
+        <file>img oumaima/delivery (1).png</file>
+        <file>img oumaima/delivery.png</file>
+        <file>img oumaima/delivery-man.png</file>
+        <file>img oumaima/email.png</file>
+        <file>img oumaima/flask.png</file>
+        <file>img oumaima/foldable-phone.png</file>
+        <file>img oumaima/image (1).png</file>
+        <file>img oumaima/image.png</file>
+        <file>img oumaima/loop.png</file>
+        <file>img oumaima/medical-equipment (1).png</file>
+        <file>img oumaima/medical-equipment.png</file>
+        <file>img oumaima/notes.png</file>
+        <file>img oumaima/packages.png</file>
+        <file>img oumaima/pdf.png</file>
+        <file>img oumaima/phone-call.png</file>
+        <file>img oumaima/printer.png</file>
+        <file>img oumaima/real-estate.png</file>
+        <file>img oumaima/report (1).png</file>
+        <file>img oumaima/report.png</file>
+        <file>img oumaima/search.png</file>
+        <file>img oumaima/sort.png</file>
+        <file>img oumaima/statistics.png</file>
+        <file>img oumaima/web-search-engine.png</file>
+    </qresource>
+</RCC>

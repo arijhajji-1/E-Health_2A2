@@ -16,7 +16,7 @@ int stat_ressource::Statistique_partie2()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '1' AND '50'") ;
+    QSqlQuery requete("select * from RESSOURCE_TRAITEMENT where STOCK_T BETWEEN '1' AND '50'") ;
     while(requete.next())
     {
             count++ ;
@@ -29,7 +29,7 @@ int stat_ressource::Statistique_partie3()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '51' AND '150'") ;
+    QSqlQuery requete("select * from RESSOURCE_TRAITEMENT where STOCK_T BETWEEN '51' AND '150'") ;
     while(requete.next())
     {
             count++ ;
@@ -42,7 +42,7 @@ int stat_ressource::Statistique_partie4()
 {
     QSqlQuery query;
     int count=0 ;
-    QSqlQuery requete("select * from RESSOURCE where STOCKRESTANT BETWEEN '151' AND '300'") ;
+    QSqlQuery requete("select * from RESSOURCE_TRAITEMENT where STOCK_T BETWEEN '151' AND '300'") ;
     while(requete.next())
     {
             count++ ;
@@ -78,13 +78,13 @@ void stat_ressource::paintEvent(QPaintEvent *)
     QPainter painter(this);
     QRectF size=QRectF(50,50,this->width()-500,this->width()-500);
 
-    painter.setBrush(Qt::blue);
+    painter.setBrush(Qt::red);
     painter.drawPie(size,0,16*y);
     ui->label_2->setText("10-50") ;
     painter.setBrush(Qt::green);
     painter.drawPie(size,16*y,16*m);
     ui->label_3->setText("51-100") ;
-    painter.setBrush(Qt::red);
+    painter.setBrush(Qt::blue);
     painter.drawPie(size,16*(m+y),16*z);
     ui->label_4->setText("101-9999") ;
 

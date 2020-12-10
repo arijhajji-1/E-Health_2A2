@@ -1,0 +1,29 @@
+
+Ressource Traitemnt a été ajoutée sous :
+ ref :123
+stock : 100 
+remarque:yui
+Ressource Traitemnt a été ajoutée sous :
+ ref :12
+stock : 17 
+remarque:qsd
+Ressource Traitemnt a été ajoutée sous :
+ ref :2
+stock : 8 
+remarque:azeezr
+Ressource Traitemnt a été ajoutée sous :
+ ref :478
+stock : 6 
+remarque:zerzer
+Ressource Traitemnt a été ajoutée sous :
+ ref :1
+stock : 14 
+remarque:azer
+Ressource Traitemnt a été ajoutée sous :
+ ref :20
+stock : 3 
+remarque:ki
+Ressource Traitemnt a été ajoutée sous :
+ ref :10
+stock : 99 
+remarque:jjn

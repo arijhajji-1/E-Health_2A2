@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>capture</class>
+ <widget class="QDialog" name="capture">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>758</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>1191</width>
+     <height>691</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1189</width>
+      <height>689</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="option_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>22</y>
+     <width>1191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:checked {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgb(120, 201, 255), stop:1 rgb(120, 0, 255))
+}
+
+QPushButton:hover {
+
+	background-color: rgb(170, 255, 255);
+}
+QPushButton {
+     background-color: rgb(120, 201, 255); border: 1px solid black;
+	border-color: rgb(170, 170, 255);
+     border-radius: 5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Les Options</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pic">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>pic</zorder>
+  <zorder>scrollArea</zorder>
+  <zorder>option_pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
