@@ -33,7 +33,7 @@ void fournisseur::set_agef (int  agef){this->agef=agef;}
 void fournisseur::set_nomf(QString nomf){this->nomf=nomf;}
 void fournisseur::set_prenomf(QString prenomf){this->prenomf=prenomf;}
 void fournisseur::set_adressef(QString adressef){this->adressef=adressef;}
-void fournisseur::set_cinf(QString cin){this->cinf=cinf;}
+void fournisseur::set_cinf(QString cinf){this->cinf=cinf;}
 void fournisseur::set_telf(int telf){this->telf=telf;}
 void fournisseur::set_photof(QString photof){this->photof=photof;}
 //ajout

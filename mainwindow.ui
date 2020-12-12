@@ -4001,10 +4001,10 @@ color:white;
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/back.png);}
+           <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/back.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/back (1).png);
+border: none;image :url(:/img/img oumaima/back (1).png);
 }
 </string>
           </property>
@@ -4058,10 +4058,10 @@ color:white;
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/report.png);}
+           <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/report.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/report (1).png);
+border: none;image :url(:/img/img oumaima/report (1).png);
 }
 </string>
           </property>
@@ -4079,10 +4079,10 @@ border: none;image :url(C:/Users/dell/Downloads/report (1).png);
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/medical-equipment.png);}
+           <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/medical-equipment.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/medical-equipment (1).png);
+border: none;image :url(:/img/img oumaima/medical-equipment (1).png);
 }
 </string>
           </property>
@@ -4100,10 +4100,10 @@ border: none;image :url(C:/Users/dell/Downloads/medical-equipment (1).png);
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/delivery.png);}
+           <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/delivery.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/delivery (1).png);
+border: none;image :url(:/img/img oumaima/delivery (1).png);
 }
 </string>
           </property>
@@ -4139,10 +4139,10 @@ border: none;image :url(C:/Users/dell/Downloads/delivery (1).png);
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/back.png);}
+             <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/back.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/back (1).png);
+border: none;image :url(:/img/img oumaima/back (1).png);
 }
 </string>
             </property>
@@ -4603,7 +4603,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/calendar.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/calendar.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4619,7 +4619,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/phone-call.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/phone-call.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4635,7 +4635,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/flask.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/flask.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4651,7 +4651,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/cardiogram.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/cardiogram.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4667,7 +4667,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/email.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/email.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4718,7 +4718,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/add.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/add.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4734,7 +4734,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/loop.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/loop.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4750,7 +4750,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/clear.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/clear.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -4766,7 +4766,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/foldable-phone.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/foldable-phone.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -5017,7 +5017,7 @@ font-weight: bold;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/sort.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/sort.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -5110,7 +5110,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/search.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/search.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -5144,7 +5144,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/archive.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/archive.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -5265,7 +5265,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/clock.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/clock.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -5281,7 +5281,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/printer.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/printer.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -5297,7 +5297,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/pdf.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/pdf.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -5336,10 +5336,10 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/back.png);}
+             <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/back.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/back (1).png);
+border: none;image :url(:/img/img oumaima/back (1).png);
 }
 </string>
             </property>
@@ -5717,7 +5717,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/add.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/add.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -5733,7 +5733,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/clear.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/clear.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -5749,7 +5749,8 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/loop.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/loop.png);
+</string>
              </property>
              <property name="text">
               <string/>
@@ -5765,7 +5766,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/foldable-phone.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/foldable-phone.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -5814,7 +5815,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/delivery-man.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/delivery-man.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -6065,7 +6066,7 @@ font-weight: bold;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/sort.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/sort.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -6272,7 +6273,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/search.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/search.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6288,7 +6289,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/archive.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/archive.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6304,7 +6305,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/pdf.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/pdf.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6320,7 +6321,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/clock.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/clock.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6336,7 +6337,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/printer.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/printer.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6352,7 +6353,7 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/statistics.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/statistics.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -6388,10 +6389,10 @@ color: rgb(0, 0, 0);text-decoration:none;</string>
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">QPushButton { border: none;image :url(C:/Users/dell/Downloads/back.png);}
+             <string notr="true">QPushButton { border: none;image :url(:/img/img oumaima/back.png);}
 QPushButton:hover
 {
-border: none;image :url(C:/Users/dell/Downloads/back (1).png);
+border: none;image :url(:/img/img oumaima/back (1).png);
 }
 </string>
             </property>
@@ -6984,7 +6985,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/clear.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/clear.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7000,7 +7001,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/loop.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/loop.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7016,7 +7017,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/add.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/add.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7032,7 +7033,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/foldable-phone.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/foldable-phone.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7048,7 +7049,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/image (1).png);</string>
+              <string notr="true">image :url(:/img/img oumaima/image (1).png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7064,7 +7065,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/image.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/image.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7080,7 +7081,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/add (1).png);</string>
+              <string notr="true">image :url(:/img/img oumaima/add (1).png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7096,7 +7097,8 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/phone-call.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/phone-call.png);
+</string>
              </property>
              <property name="text">
               <string/>
@@ -7112,7 +7114,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/age.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/age.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7128,7 +7130,7 @@ QPushButton {
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/real-estate.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/real-estate.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7407,7 +7409,7 @@ font-weight: bold;</string>
               </rect>
              </property>
              <property name="styleSheet">
-              <string notr="true">image :url(C:/Users/dell/Downloads/sort.png);</string>
+              <string notr="true">image :url(:/img/img oumaima/sort.png);</string>
              </property>
              <property name="text">
               <string/>
@@ -7594,7 +7596,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/printer.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/printer.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -7610,7 +7612,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/search.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/search.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -7626,7 +7628,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/clock.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/clock.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -7642,7 +7644,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/pdf.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/pdf.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -7658,7 +7660,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/archive.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/archive.png);</string>
             </property>
             <property name="text">
              <string/>
@@ -7674,7 +7676,7 @@ QPushButton {
              </rect>
             </property>
             <property name="styleSheet">
-             <string notr="true">image :url(C:/Users/dell/Downloads/camera.png);</string>
+             <string notr="true">image :url(:/img/img oumaima/camera.png);</string>
             </property>
             <property name="text">
              <string/>

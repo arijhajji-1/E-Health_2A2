@@ -71,3 +71,11 @@ Client Scanner a été ajoutée sous :
  cin :10
 nom : ch 
 tel:24893
+Client Scanner a été ajoutée sous :
+ cin :0
+nom :  
+tel:0
+Client Scanner a été ajoutée sous :
+ cin :15255
+nom :  
+tel:0

@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "MainWindow.h"
 #include "ui_mainwindow.h"
 #include <scanner.h>
 #include<ressource.h>
@@ -1077,3 +1077,13 @@ void MainWindow::on_pushButton_113_clicked()
 
 
 
+
+void MainWindow::on_label_110_linkActivated(const QString &link)
+{
+
+}
+
+void MainWindow::on_label_111_linkActivated(const QString &link)
+{
+
+}

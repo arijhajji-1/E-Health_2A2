@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 #include "string"
 #include<stat_ressource.h>
-#include <QMainWindow>
 #include<scanner.h>
 #include<ressource.h>
 #include<QSound>
@@ -14,7 +13,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class MainWindow: public QMainWindow
 {
     Q_OBJECT
 
@@ -218,6 +217,10 @@ private slots:
 
     void on_pushButton_113_clicked();
 
+
+    void on_label_110_linkActivated(const QString &link);
+
+    void on_label_111_linkActivated(const QString &link);
 
 private:
     Ui::MainWindow *ui;
