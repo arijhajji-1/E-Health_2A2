@@ -18,7 +18,7 @@
 #include <QTextStream>
 #include "rendezvous.h"
 #include "patient.h"
-#include "mail.h"
+#include "notification.h"
 #include <QSortFilterProxyModel>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -319,6 +319,8 @@ void MainWindow::on_pushButton_Ajouter2_clicked()
     QString dater = ui->dateTimeEdit->text();
     rendezvous e(id,dater,descr,idm);
     bool test = e.ajouter();
+    notification nf;
+            nf.notificationC();
     if(test)
     {
         ui->tableView_rdv->setModel(tmprendezvous.afficher());
@@ -586,25 +588,7 @@ void MainWindow::on_pushButton_49_clicked()
 
 }
 
-/*void MainWindow::on_pushButton_mail_clicked()
-{
 
-    ui->stackedWidget_2->setCurrentIndex(1);
-
-
-}*/
-
-/*void MainWindow::on_pushButton_envoyer_clicked()
-{
-    mail* smtp = new mail(ui->lineEdit_sender->text()," 22861274", "smtp.gmail.com", 465);
-
-           connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
-
-
-         smtp->sendMail(ui->lineEdit_sender->text(), ui->lineEdit_recepiant->text() , ui->lineEdit_subject->text(),ui->plainTextEdit_body->toPlainText());
-
-}
-*/
 
 void MainWindow::on_pushButton_39_clicked()
 {

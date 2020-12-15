@@ -1,4 +1,4 @@
-QT       += core gui sql  printsupport network
+QT       += core gui sql  printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,16 +10,16 @@ CONFIG += c++11
 
 SOURCES += \
     connection.cpp \
-    mail.cpp \
     main.cpp \
     mainwindow.cpp \
+    notification.cpp \
     patient.cpp \
     rendezvous.cpp
 
 HEADERS += \
     connection.h \
-    mail.h \
     mainwindow.h \
+    notification.h \
     patient.h \
     rendezvous.h
 
@@ -32,4 +32,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    pic.qrc
