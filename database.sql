@@ -4,7 +4,6 @@
 --------------------------------------------------------
 --  DDL for Table STAFF
 --------------------------------------------------------
-
   CREATE TABLE "ZARROUK"."STAFF" 
    (	"ID" VARCHAR2(20 BYTE), 
 	"NOM" VARCHAR2(20 BYTE), 
