@@ -2582,7 +2582,8 @@ void MainWindow::on_pushButton_114_clicked()
 
 void MainWindow::on_pushButton_112_clicked()
 {
-     ui->stackedWidget_6->setCurrentIndex(1);
+    d3.exec();
+    /*** ui->stackedWidget_6->setCurrentIndex(1);*/
 }
 
 void MainWindow::on_pushButton_113_clicked()

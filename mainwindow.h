@@ -16,6 +16,7 @@
 #include<QWidget>
 #include<dialog.h>
 #include<dialog2.h>
+#include<dialog3.h>
 #include "string"
 #include<stat_ressource.h>
 #include<scanner.h>
@@ -375,6 +376,7 @@ private:
    QSequentialAnimationGroup * animgrp;
    Dialog d;
    Dialog2 d2;
+   Dialog3 d3;
    scanner tempscanner;
    ressource tempressource;
    stat_ressource *sre;

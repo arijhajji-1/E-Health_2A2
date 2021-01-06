@@ -8507,6 +8507,45 @@ QPushButton {
              <string>Prendre Image </string>
             </property>
            </widget>
+           <widget class="QPushButton" name="pushButton_112">
+            <property name="geometry">
+             <rect>
+              <x>640</x>
+              <y>550</y>
+              <width>121</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:checked {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgb(120, 201, 255), stop:1 rgb(120, 0, 255))
+}
+
+QPushButton:hover {
+
+	background-color: rgb(170, 255, 255);
+}
+QPushButton {
+     background-color: rgb(120, 201, 255); border: 1px solid black;
+	border-color: rgb(170, 170, 255);
+     border-radius: 5px;
+	font: 8pt &quot;MS Shell Dlg 2&quot;;
+
+}</string>
+            </property>
+            <property name="text">
+             <string>Temp</string>
+            </property>
+           </widget>
           </widget>
          </widget>
         </widget>

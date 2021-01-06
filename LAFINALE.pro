@@ -54,6 +54,7 @@ SOURCES += \
     connexion.cpp \
     dialog.cpp \
     dialog2.cpp \
+    dialog3.cpp \
     entretien.cpp \
     fournisseur.cpp \
     fournisseur1.cpp \
@@ -76,6 +77,7 @@ HEADERS += \
     connexion.h \
     dialog.h \
     dialog2.h \
+    dialog3.h \
     entretien.h \
     fournisseur.h \
     fournisseur1.h \
@@ -93,6 +95,7 @@ FORMS += \
     capture.ui \
     dialog.ui \
     dialog2.ui \
+    dialog3.ui \
     image.ui \
     mainwindow.ui \
     stat_ressource.ui
