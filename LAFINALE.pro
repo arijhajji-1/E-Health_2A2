@@ -62,6 +62,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     materiels.cpp \
+    notification.cpp \
     patient.cpp \
     rendezvous.cpp \
     ressource.cpp \
@@ -84,6 +85,7 @@ HEADERS += \
     image.h \
     mainwindow.h \
     materiels.h \
+    notification.h \
     patient.h \
     rendezvous.h \
     ressource.h \

@@ -1192,6 +1192,8 @@ void MainWindow::on_pushButton_Ajouter2_clicked()
      ui->lineEdit_idmed_2->clear();
     ui->plainTextEdit_desc->clear();
     ui->dateTimeEdit->clear();
+    notification nf;
+            nf.notificationC();
 }
 
 void MainWindow::on_pushButton_Supprimer2_clicked()

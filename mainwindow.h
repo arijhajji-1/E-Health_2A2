@@ -26,6 +26,7 @@
 #include<fournisseur1.h>
 #include<capture.h>
 #include<image.h>
+#include<notification.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
