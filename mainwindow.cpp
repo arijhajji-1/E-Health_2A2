@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "classe_personnel.h"
@@ -1806,7 +1806,7 @@ void MainWindow::on_pushButton_79_clicked()
     if (test)
     {
 
-        QFile file("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueClientScanner.txt");
+        QFile file("C:/Users/HP/Desktop/Histori/HistoriqueClientScanner.txt");
         if (!file.open(QIODevice::WriteOnly | QIODevice::Append |QIODevice::Text))
             return;
         //converti int -> string
@@ -1940,7 +1940,7 @@ void MainWindow::on_radioButton_4_clicked()
 //historique.txt
 void MainWindow::on_pushButton_91_clicked()
 {
-    QFile file ("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueClientScanner.txt");
+    QFile file ("C:/Users/HP/Desktop/Histori/HistoriqueClientScanner.txt");
     if (!file.open(QIODevice::ReadOnly))
     {
         QMessageBox::information(0,"info",file.errorString());
@@ -2031,7 +2031,7 @@ void MainWindow::on_pushButton_109_clicked()
     bool test=c.ajouter_ressource();
     if (test)
     {
-        QFile file("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueRessource.txt");
+        QFile file("C:/Users/HP/Desktop/Histori/HistoriqueRessource.txt");
         if (!file.open(QIODevice::WriteOnly | QIODevice::Append |QIODevice::Text))
             return;
         //converti int -> string
@@ -2185,7 +2185,7 @@ void MainWindow::on_pushButton_106_clicked()
 //affiche historique ressource
 void MainWindow::on_pushButton_108_clicked()
 {
-    QFile file ("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueRessource.txt");
+    QFile file ("C:/Users/HP/Desktop/Histori/HistoriqueRessource.txt");
     if (!file.open(QIODevice::ReadOnly))
     {
         QMessageBox::information(0,"info",file.errorString());
@@ -2383,7 +2383,7 @@ void MainWindow::on_pushButton_95_clicked()
     if (test)
     {
 
-        QFile file("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueFournisseur.txt");
+        QFile file("C:/Users/HP/Desktop/Histori/Historiquefournisseur.txt");
         if (!file.open(QIODevice::WriteOnly | QIODevice::Append |QIODevice::Text))
             return;
         //converti int -> string
@@ -2531,7 +2531,7 @@ void MainWindow::on_pushButton_105_clicked()
 //historique fournisseur
 void MainWindow::on_pushButton_99_clicked()
 {
-    QFile file ("C:\\Users\\dell\\Desktop\\project 1.2\\historique\\HistoriqueFournisseur.txt");
+    QFile file ("C:/Users/HP/Desktop/Histori/Historiquefournisseur.txt");
     if (!file.open(QIODevice::ReadOnly))
     {
         QMessageBox::information(0,"info",file.errorString());
