@@ -1059,7 +1059,8 @@ void MainWindow::on_ajouter_clicked()
     int id = ui->lineEdit_id->text().toInt();
     int numtel = ui->lineEdit_numtel->text().toInt();
     ui->lineEdit_numtel->setValidator(new QIntValidator(00000000,99999999,this));
-
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
     QString nom=ui->lineEdit_nom->text();
     QString prenom = ui->lineEdit_prenom->text();
     QString adresse = ui->lineEdit_adresse->text();
@@ -1106,6 +1107,8 @@ QMessageBox::information(nullptr,QObject::tr("supprimer un patient"),QObject::tr
 
 void MainWindow::on_pushButton_modifier_clicked()
 {
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
     int id = ui->lineEdit_id->text().toInt();
     int numtel = ui->lineEdit_numtel->text().toInt();
     QString nom=ui->lineEdit_nom->text();
@@ -1140,6 +1143,8 @@ void MainWindow::on_pushButton_modifier_clicked()
 
 void MainWindow::on_pushButton_chercher_clicked()
 {
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
     QString id = ui->lineEdit_id->text();
     QString numtel = ui->lineEdit_numtel->text();
     QString nom=ui->lineEdit_nom->text();
@@ -1167,6 +1172,8 @@ void MainWindow::on_pushButton_chercher_clicked()
 
 void MainWindow::on_pushButton_Ajouter2_clicked()
 {
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
     int id = ui->lineEdit_idpatient->text().toInt();
     QString idm = ui->lineEdit_idmed->text();
     QString nomm=ui->lineEdit_idmed_2->text();
@@ -1215,6 +1222,8 @@ void MainWindow::on_pushButton_Supprimer2_clicked()
 
 void MainWindow::on_pushButton_Chercher2_clicked()
 {
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
    QString  id = ui->lineEdit_idpatient->text();
     QString idm = ui->lineEdit_idmed->text();
         if(idm==""){
@@ -1229,6 +1238,8 @@ void MainWindow::on_pushButton_Chercher2_clicked()
 
 void MainWindow::on_pushButton_Modifier2_clicked()
 {
+    ui->lineEdit_id->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
+    ui->lineEdit_numtel->setValidator(new QRegExpValidator(QRegExp("[a-z-A-Z]+"),this));
     int id = ui->lineEdit_idpatient->text().toInt();
     QString idm = ui->lineEdit_idmed->text();
     QString nomm=ui->lineEdit_idmed_2->text();
